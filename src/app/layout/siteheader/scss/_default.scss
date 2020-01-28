@@ -1,55 +1,52 @@
 $rem60: rem(60px);
 .siteheader-buffer {
-    height: rem(60px);
     background-color: #000;
+    height: rem(60px);
 }
 .siteheader-comp {
     // background-color: #E8C28A;
     // background: url('./../../../assets/purty_wood_@2X.png') top left repeat;
-    height: rem(60px);
-    background-color: rgba(map-get($mat-deep-purple, 800), 0.85);
     // box-shadow: 0px 8px 8px 0px rgba(map-get($mat-deep-purple, 800),0.85);
+    background-color: rgba(#fff, 0.9);
+    height: rem(60px);
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 96;
     header {
-        padding: rem(5px) 0;
+        
     }
     .header-wrap {
         // background: linear-gradient(to bottom, rgba(#fff,0.5) 0%,rgba(#000,0) 75%);
     }
     .logo-wrap {
-        float: left;
-        margin-right: rem(15px);
+        left: rem(15px);
+        padding: rem(5px) 0;
+        position: absolute;
+        top: 0;
     }
     .site-logo {
-        border-radius: 100%;
-        border: 1px solid #fff;
-        color: #fff;
-        display: inline-block;
+        display: block;
         height: rem(50px);
-        left: rem(5px);
-        padding: rem(5px);
         text-align: center;
-        top: rem(5px);
         width: rem(50px);
-        .name {
-            font-size: rem(8px);
-            font-weight: 300;
+        img {
+            width: 100%;
         }
     }
     .nav-wrap {
+        position: absolute;
+        right: rem(15px);
         text-align: right;
-        float: right;
+        top: 0;
         button {
             background: transparent;
             border: 0;
-            color: #fff;
-            height: rem(50px);
+            color: #000;
+            height: rem(60px);
             line-height: 1;
-            margin: 0 0 0 rem(10px);
+            margin: 0 0 0 rem(8px);
             padding: 0;
             width: rem(40px);
             i {
@@ -113,9 +110,15 @@ $rem60: rem(60px);
     .accessible-megamenu {
         background-color: transparent;
         border: 0;
+        display: block;
         height: auto;
         margin: 0;
         padding: 0;
+        &:after {
+            clear: both;
+            content: '';
+            display: table;
+        }
         & > .accessible-megamenu-top-nav-item {
             border-top: rem(1px) solid map-get($mat-deep-purple, 200);
             height: auto;

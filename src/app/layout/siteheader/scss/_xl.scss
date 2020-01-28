@@ -1,15 +1,84 @@
-.siteheader-buffer, .siteheader-comp {
+.siteheader-buffer {
     height: rem(100px);
 }
+.siteheader-comp {
+    height: rem(100px);
+    .logo-wrap {
+        padding: rem(15px) 0;
+    }
+    .nav-wrap {
+        button {
+            height: rem(100px);
+            margin: 0 0 0 rem(16px);
+        }
+    }
+}
 .site-nav {
+    background-color: transparent;
+    box-sizing: border-box;
+    height: auto;
+    position: static;
+    right: 0;
+    top: 0;
+    width: 100%;
     .accessible-megamenu {
+        float: right;
+        padding: 0 rem(176px) 0 rem(96px);
+        max-width: rem(1170px);
+        width: 100%;
         & > .accessible-megamenu-top-nav-item {
+            border: 0;
+            border-left: rem(1px) solid transparent;
+            width: 20%;
+            &:first-child {
+                border-left: 0
+            }
             a[aria-expanded] {
+                align-items: center;
+                border-radius: rem(6px) rem(6px) 0 0;
+                display: flex;
                 font-size: rem(18px);
+                height: rem(100px);
+                padding: rem(16px);
+                justify-content: center;
+                span {
+                    // display: inline-block;
+                }
+                &:focus, &.open {
+                    // background-color: map-get($mat-deep-purple, 800);
+                }
+                &:hover {
+                    // background-color: rgba(map-get($mat-deep-purple, 800), 0.5);
+                }
                 .ikn {
+                    right: rem(10px);
                     top: rem(20px);
+                    opacity: 0;
+                }
+                &.open {
+                    .ikn {
+                        opacity: 1;
+                    }
                 }
             }
+        }
+    }
+    .accessible-megamenu-panel {
+        background-color: #fff;
+        border-radius: 0 0 rem(6px) rem(6px);
+        // box-shadow: 0px 8px 8px 0px #fff;
+        // color: #fff;
+        padding: rem(30px) 0;
+        &.open {
+            top: auto;
+        }
+        li {
+            padding: rem(15px) 0;
+        }
+        a {
+            // color: #fff;
+            display: inline;
+            padding: 0;
         }
     }
 }
