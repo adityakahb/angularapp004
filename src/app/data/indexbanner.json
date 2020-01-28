@@ -1,0 +1,86 @@
+[{
+    "img": {
+        "xs": "./../../../assets/banner/a-800x400.jpg",
+        "xs2": "./../../../assets/banner/a-1600x800.jpg",
+        "sm": "",
+        "sm2": "",
+        "md": "./../../../assets/banner/a-1200x600.jpg",
+        "md2": "./../../../assets/banner/a-2400x1200.jpg",
+        "lg": "",
+        "lg2": "",
+        "xl": "./../../../assets/banner/a-1280x720.jpg",
+        "xl2": "./../../../assets/banner/a-2560x1440.jpg"
+    },
+    "title": "",
+    "desc": "",
+    "cta": "",
+    "ctalink": ""
+},{
+    "img": {
+        "xs": "./../../../assets/banner/b-800x400.jpg",
+        "xs2": "./../../../assets/banner/b-1600x800.jpg",
+        "sm": "",
+        "sm2": "",
+        "md": "./../../../assets/banner/b-1200x600.jpg",
+        "md2": "./../../../assets/banner/b-2400x1200.jpg",
+        "lg": "",
+        "lg2": "",
+        "xl": "./../../../assets/banner/b-1280x720.jpg",
+        "xl2": "./../../../assets/banner/b-2560x1440.jpg"
+    },
+    "title": "",
+    "desc": "",
+    "cta": "",
+    "ctalink": ""
+}, {
+    "img": {
+        "xs": "./../../../assets/banner/c-800x400.jpg",
+        "xs2": "./../../../assets/banner/c-1600x800.jpg",
+        "sm": "",
+        "sm2": "",
+        "md": "./../../../assets/banner/c-1200x600.jpg",
+        "md2": "./../../../assets/banner/c-2400x1200.jpg",
+        "lg": "",
+        "lg2": "",
+        "xl": "./../../../assets/banner/c-1280x720.jpg",
+        "xl2": "./../../../assets/banner/c-2560x1440.jpg"
+    },
+    "title": "",
+    "desc": "",
+    "cta": "",
+    "ctalink": ""
+}, {
+    "img": {
+        "xs": "./../../../assets/banner/d-800x400.jpg",
+        "xs2": "./../../../assets/banner/d-1600x800.jpg",
+        "sm": "",
+        "sm2": "",
+        "md": "./../../../assets/banner/d-1200x600.jpg",
+        "md2": "./../../../assets/banner/d-2400x1200.jpg",
+        "lg": "",
+        "lg2": "",
+        "xl": "./../../../assets/banner/d-1280x720.jpg",
+        "xl2": "./../../../assets/banner/d-2560x1440.jpg"
+    },
+    "title": "",
+    "desc": "",
+    "cta": "",
+    "ctalink": ""
+}, {
+    "img": {
+        "xs": "./../../../assets/banner/e-800x400.jpg",
+        "xs2": "./../../../assets/banner/e-1600x800.jpg",
+        "sm": "",
+        "sm2": "",
+        "md": "./../../../assets/banner/e-1200x600.jpg",
+        "md2": "./../../../assets/banner/e-2400x1200.jpg",
+        "lg": "",
+        "lg2": "",
+        "xl": "./../../../assets/banner/e-1280x720.jpg",
+        "xl2": "./../../../assets/banner/e-2560x1440.jpg"
+    },
+    "title": "",
+    "desc": "",
+    "cta": "",
+    "ctalink": ""
+}]

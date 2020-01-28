@@ -1,0 +1,15 @@
+.siteheader-buffer, .siteheader-comp {
+    height: rem(100px);
+}
+.site-nav {
+    .accessible-megamenu {
+        & > .accessible-megamenu-top-nav-item {
+            a[aria-expanded] {
+                font-size: rem(18px);
+                .ikn {
+                    top: rem(20px);
+                }
+            }
+        }
+    }
+}

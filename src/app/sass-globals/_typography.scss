@@ -1,0 +1,65 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(16px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: rem(1px);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+body {
+    font-size: rem(14px);
+    @media (min-width: $md) {
+        font-size: rem(18px);
+    }
+}
+
+p {
+    font-size: rem(14px);
+    @media (min-width: $md) {
+        font-size: rem(18px);
+    }
+}
+h1 {
+    font-size: rem(32px);
+    @media (min-width: $md) {
+        font-size: rem(54px);
+    }
+}
+h2 {
+    font-size: rem(28px);
+    @media (min-width: $md) {
+        font-size: rem(44px);
+    }
+}
+h3 {
+    font-size: rem(24px);
+    @media (min-width: $md) {
+        font-size: rem(36px);
+    }
+}
+h4 {
+    font-size: rem(21px);
+    @media (min-width: $md) {
+        font-size: rem(32px);
+    }
+}
+h5 {
+    font-size: rem(18px);
+    @media (min-width: $md) {
+        font-size: rem(28px);
+    }
+}
+h6 {
+    font-size: rem(14px);
+    @media (min-width: $md) {
+        font-size: rem(18px);
+    }
+}

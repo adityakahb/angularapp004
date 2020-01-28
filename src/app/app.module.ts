@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DefaultLayoutModule } from './layout/defaultlayout/defaultlayout.module';
+import { IndexModule } from './pages/index/index.module';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -10,7 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    LayoutModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    DefaultLayoutModule,
+    IndexModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+.max-wrap {
+    max-width: rem(1440px);
+    // min-width: rem(320px);
+    margin: 0 auto;
+}
+.full-width {
+    width: 100%;
+}
+.mat-raised-button {
+    line-height: rem(36px);
+}
+.food-icon {
+    font-family: "Flaticon";
+    &:before {
+        margin: 0;
+    }
+}

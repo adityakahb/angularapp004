@@ -1,0 +1,179 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 29/08/2017 08:03
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("/Flaticon.eot");
+  src: url("/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("/Flaticon.woff") format("woff"),
+       url("/Flaticon.ttf") format("truetype"),
+       url("/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-001-steak:before { content: "\f100"; }
+.flaticon-002-soft-drink-3:before { content: "\f101"; }
+.flaticon-003-mushroom:before { content: "\f102"; }
+.flaticon-004-garlic:before { content: "\f103"; }
+.flaticon-005-radish:before { content: "\f104"; }
+.flaticon-006-candy-1:before { content: "\f105"; }
+.flaticon-007-birthday-cake:before { content: "\f106"; }
+.flaticon-008-ice-cream-2:before { content: "\f107"; }
+.flaticon-009-broccoli:before { content: "\f108"; }
+.flaticon-010-pie:before { content: "\f109"; }
+.flaticon-011-lollipop:before { content: "\f10a"; }
+.flaticon-012-candy:before { content: "\f10b"; }
+.flaticon-013-tomato:before { content: "\f10c"; }
+.flaticon-014-corn:before { content: "\f10d"; }
+.flaticon-015-sandwich-2:before { content: "\f10e"; }
+.flaticon-016-carrot:before { content: "\f10f"; }
+.flaticon-017-cherries:before { content: "\f110"; }
+.flaticon-018-ice-cream-1:before { content: "\f111"; }
+.flaticon-019-lemon:before { content: "\f112"; }
+.flaticon-020-strawberry:before { content: "\f113"; }
+.flaticon-021-breakfast:before { content: "\f114"; }
+.flaticon-022-burger-2:before { content: "\f115"; }
+.flaticon-023-meat-pie:before { content: "\f116"; }
+.flaticon-024-cupcake-1:before { content: "\f117"; }
+.flaticon-025-syrup:before { content: "\f118"; }
+.flaticon-026-piece-of-cake:before { content: "\f119"; }
+.flaticon-027-chicken-leg:before { content: "\f11a"; }
+.flaticon-028-soft-drink-2:before { content: "\f11b"; }
+.flaticon-029-roast-chicken:before { content: "\f11c"; }
+.flaticon-030-ham:before { content: "\f11d"; }
+.flaticon-031-gingerbread-man:before { content: "\f11e"; }
+.flaticon-032-bread:before { content: "\f11f"; }
+.flaticon-033-kiwi:before { content: "\f120"; }
+.flaticon-034-cookie:before { content: "\f121"; }
+.flaticon-035-sausage:before { content: "\f122"; }
+.flaticon-036-soft-drink-1:before { content: "\f123"; }
+.flaticon-037-burger-1:before { content: "\f124"; }
+.flaticon-038-soda-1:before { content: "\f125"; }
+.flaticon-039-cake:before { content: "\f126"; }
+.flaticon-040-taco:before { content: "\f127"; }
+.flaticon-041-groceries:before { content: "\f128"; }
+.flaticon-042-sandwich-1:before { content: "\f129"; }
+.flaticon-043-avocado:before { content: "\f12a"; }
+.flaticon-044-soda:before { content: "\f12b"; }
+.flaticon-045-boiled-egg:before { content: "\f12c"; }
+.flaticon-046-sandwich:before { content: "\f12d"; }
+.flaticon-047-burger:before { content: "\f12e"; }
+.flaticon-048-pizza-2:before { content: "\f12f"; }
+.flaticon-049-ice-cream:before { content: "\f130"; }
+.flaticon-050-fried-egg:before { content: "\f131"; }
+.flaticon-051-can:before { content: "\f132"; }
+.flaticon-052-sardines:before { content: "\f133"; }
+.flaticon-053-popcorn:before { content: "\f134"; }
+.flaticon-054-soft-drink:before { content: "\f135"; }
+.flaticon-055-chocolate:before { content: "\f136"; }
+.flaticon-056-sushi:before { content: "\f137"; }
+.flaticon-057-watermelon:before { content: "\f138"; }
+.flaticon-058-orange:before { content: "\f139"; }
+.flaticon-059-pear:before { content: "\f13a"; }
+.flaticon-060-cupcake:before { content: "\f13b"; }
+.flaticon-061-pizza-1:before { content: "\f13c"; }
+.flaticon-062-doughnut-1:before { content: "\f13d"; }
+.flaticon-063-banana-milk:before { content: "\f13e"; }
+.flaticon-064-orange-juice:before { content: "\f13f"; }
+.flaticon-065-pizza:before { content: "\f140"; }
+.flaticon-066-hot-dog:before { content: "\f141"; }
+.flaticon-067-noodles:before { content: "\f142"; }
+.flaticon-068-doughnut:before { content: "\f143"; }
+.flaticon-069-french-fries:before { content: "\f144"; }
+.flaticon-070-burrito:before { content: "\f145"; }
+    
+    $font-Flaticon-001-steak: "\f100";
+    $font-Flaticon-002-soft-drink-3: "\f101";
+    $font-Flaticon-003-mushroom: "\f102";
+    $font-Flaticon-004-garlic: "\f103";
+    $font-Flaticon-005-radish: "\f104";
+    $font-Flaticon-006-candy-1: "\f105";
+    $font-Flaticon-007-birthday-cake: "\f106";
+    $font-Flaticon-008-ice-cream-2: "\f107";
+    $font-Flaticon-009-broccoli: "\f108";
+    $font-Flaticon-010-pie: "\f109";
+    $font-Flaticon-011-lollipop: "\f10a";
+    $font-Flaticon-012-candy: "\f10b";
+    $font-Flaticon-013-tomato: "\f10c";
+    $font-Flaticon-014-corn: "\f10d";
+    $font-Flaticon-015-sandwich-2: "\f10e";
+    $font-Flaticon-016-carrot: "\f10f";
+    $font-Flaticon-017-cherries: "\f110";
+    $font-Flaticon-018-ice-cream-1: "\f111";
+    $font-Flaticon-019-lemon: "\f112";
+    $font-Flaticon-020-strawberry: "\f113";
+    $font-Flaticon-021-breakfast: "\f114";
+    $font-Flaticon-022-burger-2: "\f115";
+    $font-Flaticon-023-meat-pie: "\f116";
+    $font-Flaticon-024-cupcake-1: "\f117";
+    $font-Flaticon-025-syrup: "\f118";
+    $font-Flaticon-026-piece-of-cake: "\f119";
+    $font-Flaticon-027-chicken-leg: "\f11a";
+    $font-Flaticon-028-soft-drink-2: "\f11b";
+    $font-Flaticon-029-roast-chicken: "\f11c";
+    $font-Flaticon-030-ham: "\f11d";
+    $font-Flaticon-031-gingerbread-man: "\f11e";
+    $font-Flaticon-032-bread: "\f11f";
+    $font-Flaticon-033-kiwi: "\f120";
+    $font-Flaticon-034-cookie: "\f121";
+    $font-Flaticon-035-sausage: "\f122";
+    $font-Flaticon-036-soft-drink-1: "\f123";
+    $font-Flaticon-037-burger-1: "\f124";
+    $font-Flaticon-038-soda-1: "\f125";
+    $font-Flaticon-039-cake: "\f126";
+    $font-Flaticon-040-taco: "\f127";
+    $font-Flaticon-041-groceries: "\f128";
+    $font-Flaticon-042-sandwich-1: "\f129";
+    $font-Flaticon-043-avocado: "\f12a";
+    $font-Flaticon-044-soda: "\f12b";
+    $font-Flaticon-045-boiled-egg: "\f12c";
+    $font-Flaticon-046-sandwich: "\f12d";
+    $font-Flaticon-047-burger: "\f12e";
+    $font-Flaticon-048-pizza-2: "\f12f";
+    $font-Flaticon-049-ice-cream: "\f130";
+    $font-Flaticon-050-fried-egg: "\f131";
+    $font-Flaticon-051-can: "\f132";
+    $font-Flaticon-052-sardines: "\f133";
+    $font-Flaticon-053-popcorn: "\f134";
+    $font-Flaticon-054-soft-drink: "\f135";
+    $font-Flaticon-055-chocolate: "\f136";
+    $font-Flaticon-056-sushi: "\f137";
+    $font-Flaticon-057-watermelon: "\f138";
+    $font-Flaticon-058-orange: "\f139";
+    $font-Flaticon-059-pear: "\f13a";
+    $font-Flaticon-060-cupcake: "\f13b";
+    $font-Flaticon-061-pizza-1: "\f13c";
+    $font-Flaticon-062-doughnut-1: "\f13d";
+    $font-Flaticon-063-banana-milk: "\f13e";
+    $font-Flaticon-064-orange-juice: "\f13f";
+    $font-Flaticon-065-pizza: "\f140";
+    $font-Flaticon-066-hot-dog: "\f141";
+    $font-Flaticon-067-noodles: "\f142";
+    $font-Flaticon-068-doughnut: "\f143";
+    $font-Flaticon-069-french-fries: "\f144";
+    $font-Flaticon-070-burrito: "\f145";
