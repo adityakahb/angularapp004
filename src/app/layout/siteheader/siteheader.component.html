@@ -1,4 +1,4 @@
-<section class="siteheader-comp" id="siteheader-comp"  [ngClass]="{'active': isScrolledDown}">
+<section class="siteheader-comp" id="siteheader-comp" [ngClass]="{'active': isScrolledDown}">
     <div class="header-wrap">
         <header>
             <div class="max-wrap">
@@ -11,7 +11,7 @@
                                 </a>
                             </div>
                             <div class="site-nav" [ngClass]="{'active': isNavOpen}">
-                                <button class="close-site-nav d-md-none" (click)="closeAllNav()">
+                                <button class="close-site-nav d-xl-none" (click)="closeAllNav()">
                                     <i class="material-icons">close</i>
                                 </button>
                                 <nav>
@@ -25,7 +25,7 @@
                                                 <div class="max-wrap">
                                                     <div class="container-fluid">
                                                         <div class="row">
-                                                            <div *ngFor="let subnavgroup of item.links" class="col-12 col-md-4 p-0 pl-md-3 pr-md-3">
+                                                            <div *ngFor="let subnavgroup of item.links" class="col-12 col-xl-4 p-0 pl-xl-3 pr-xl-3">
                                                                 <ul class="sub-nav-group">
                                                                     <li *ngFor="let subnav of subnavgroup.col">
                                                                         <a [href]="subnav.link" [innerHTML]="subnav.name"></a>
@@ -125,7 +125,7 @@
         </div>
     </div>
 </section>
-<div class="siteheader-buffer"></div>
+<div class="siteheader-buffer" [ngClass]="{'active': isScrolledDown}"></div>
 <!-- <img src="https://via.placeholder.com/400x400.png?text=src"
     src2="https://via.placeholder.com/800x800.png?text=src+retina"
     sm="https://via.placeholder.com/600x600.png?text=sm"

@@ -14,17 +14,12 @@ $rem60: rem(60px);
     top: 0;
     width: 100%;
     z-index: 96;
-    header {
-        
-    }
-    .header-wrap {
-        // background: linear-gradient(to bottom, rgba(#fff,0.5) 0%,rgba(#000,0) 75%);
-    }
     .logo-wrap {
         left: rem(15px);
         padding: rem(5px) 0;
         position: absolute;
         top: 0;
+        z-index: 2;
     }
     .site-logo {
         display: block;
@@ -40,6 +35,7 @@ $rem60: rem(60px);
         right: rem(15px);
         text-align: right;
         top: 0;
+        z-index: 2;
         button {
             background: transparent;
             border: 0;
@@ -109,7 +105,7 @@ $rem60: rem(60px);
     }
     .accessible-megamenu {
         background-color: transparent;
-        border: 0;
+        border: rem(1px) solid transparent;
         display: block;
         height: auto;
         margin: 0;
@@ -160,7 +156,6 @@ $rem60: rem(60px);
     }
     .accessible-megamenu-panel {
         background-color: #e6e6e6;
-        border: 0;
         border: 0;
         box-shadow: none;
         padding: 0;

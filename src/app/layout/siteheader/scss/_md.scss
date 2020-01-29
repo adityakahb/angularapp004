@@ -3,9 +3,6 @@
 }
 .siteheader-comp {
     height: rem(80px);
-    header {
-        // padding: rem(5px) 0;
-    }
     .site-logo {
         height: rem(70px);
         width: rem(70px);
@@ -17,6 +14,6 @@
         }
     }
 }
-.site-user {
+.site-user, .site-nav {
     width: rem(400px);
 }

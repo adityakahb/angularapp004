@@ -1,5 +1,8 @@
 .siteheader-buffer {
     height: rem(100px);
+    &.active {
+        height: rem(80px);
+    }
 }
 .siteheader-comp {
     height: rem(100px);
@@ -29,15 +32,11 @@
             border-left: rem(1px) solid transparent;
             max-width: rem(178px);
             width: 20%;
-            &:first-child {
-                border-left: 0
-            }
             a[aria-expanded] {
                 align-items: center;
-                border-radius: rem(6px) rem(6px) 0 0;
                 display: flex;
                 font-size: rem(18px);
-                height: rem(100px);
+                height: rem(98px);
                 justify-content: center;
                 padding: rem(16px);
                 .ikn {
@@ -70,4 +69,7 @@
             padding: 0;
         }
     }
+}
+.siteheader-comp.active {
+    height: rem(80px);
 }
