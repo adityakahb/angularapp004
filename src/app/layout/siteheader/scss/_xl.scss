@@ -22,13 +22,12 @@
     top: 0;
     width: 100%;
     .accessible-megamenu {
-        float: right;
         padding: 0 rem(176px) 0 rem(96px);
-        max-width: rem(1170px);
         width: 100%;
         & > .accessible-megamenu-top-nav-item {
             border: 0;
             border-left: rem(1px) solid transparent;
+            max-width: rem(178px);
             width: 20%;
             &:first-child {
                 border-left: 0
@@ -39,17 +38,8 @@
                 display: flex;
                 font-size: rem(18px);
                 height: rem(100px);
-                padding: rem(16px);
                 justify-content: center;
-                span {
-                    // display: inline-block;
-                }
-                &:focus, &.open {
-                    // background-color: map-get($mat-deep-purple, 800);
-                }
-                &:hover {
-                    // background-color: rgba(map-get($mat-deep-purple, 800), 0.5);
-                }
+                padding: rem(16px);
                 .ikn {
                     right: rem(10px);
                     top: rem(20px);
@@ -64,9 +54,8 @@
         }
     }
     .accessible-megamenu-panel {
-        background-color: #fff;
         border-radius: 0 0 rem(6px) rem(6px);
-        // box-shadow: 0px 8px 8px 0px #fff;
+        box-shadow: 0px 8px 8px 0px rgba(#000, 0.25);
         // color: #fff;
         padding: rem(30px) 0;
         &.open {
