@@ -43,6 +43,13 @@ body {
     // background: url('./assets/board-bright-@2x.jpg') top left repeat #303030;
     // background-size: contain;
     letter-spacing: rem(1px);
+    &.nav-open {
+        overflow: hidden;
+        position: fixed;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 html, body { height: 100%; }

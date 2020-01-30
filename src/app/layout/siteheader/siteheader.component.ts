@@ -1,10 +1,15 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener, Renderer2 } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 
 declare const require: any;
 declare const $: any;
 
 let navJson = require('./../../data/megamenu.json');
+let lastScrollTop = 0;
+let lastScrollTopVal = 0;
+let bodyElem;
+let htmlElem;
+let className = 'nav-open';
 
 @Component({
   selector: 'app-siteheader',
@@ -15,41 +20,63 @@ export class SiteheaderComponent implements AfterViewInit {
   navData = navJson;
   isNavOpen = false;
   isUserNavOpen = false;
+  isSearchNavOpen = false;
   isScrolledDown = false;
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
 
   ngAfterViewInit() {
-    $('nav:first').accessibleMegaMenu();
-    this.addScrollEvent(window);
+    if (window && document) {
+      $('nav:first').accessibleMegaMenu();
+      bodyElem = document.querySelector('body');
+      htmlElem = document.documentElement;
+    }
   }
 
-  addScrollEvent(window: Window) {
-    let lastScrollTop = 0;
-    let self = this;
-    window.addEventListener('scroll', function() { // or window.addEventListener("scroll"....
-      let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-      if (st > lastScrollTop){
-        // downscroll code
-        self.isScrolledDown = true;
-      } else {
-          // upscroll code
-        self.isScrolledDown = false;
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+    if (window && document) {
+      lastScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      if (lastScrollTop > 0) {
+        this.isScrolledDown = true;
+      } else if (this.isScrolledDown && lastScrollTop <= 0) {
+        this.isScrolledDown = false;
       }
-      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-    }, false);
+    }
+  }
+
+  updateScrollVal() {
+    if (window && document && bodyElem) {
+      bodyElem.classList.add(className);
+      bodyElem.style.top = (-1 * lastScrollTop) + 'px';
+      lastScrollTopVal = lastScrollTop;
+    }
   }
 
   openNav() {
     this.isNavOpen = true;
+    this.updateScrollVal();
+  }
+
+  openSearchNav() {
+    this.isSearchNavOpen = true;
+    this.updateScrollVal();
   }
 
   openUserNav() {
     this.isUserNavOpen = true;
+    this.updateScrollVal();
   }
 
   closeAllNav() {
     this.isNavOpen = false;
     this.isUserNavOpen = false;
+    this.isSearchNavOpen = false;
+    if (window && document && htmlElem && bodyElem && bodyElem.classList.contains(className)) {
+      bodyElem.removeAttribute('style');
+      bodyElem.classList.remove(className);
+      window.scroll({
+        top: lastScrollTopVal
+      });
+    }
   }
 
   onClickSubmit(formData) {

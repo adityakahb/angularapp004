@@ -7,17 +7,19 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-import { MatInputModule } from "@angular/material/Input";
-import { MatButtonModule } from "@angular/material/button";
+import { MatFormFieldModule, MatInputModule, MatAutocompleteModule, MatButtonModule, MatProgressSpinnerModule} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule,
     DirectiveModule,
     FormsModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatProgressSpinnerModule,
+    RouterModule
   ],
   exports: [
     SiteheaderComponent,
