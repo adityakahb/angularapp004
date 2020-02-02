@@ -7,8 +7,8 @@ $rem60: rem(60px);
 .siteheader-comp {
     // background-color: #E8C28A;
     // background: url('./../../../assets/purty_wood_@2X.png') top left repeat;
-    box-shadow: 0px 8px 8px 0px rgba(#000, 0.25);
     background-color: rgba(#fff, 0.9);
+    box-shadow: 0px 8px 8px 0px rgba(#000, 0.25);
     height: rem(60px);
     left: 0;
     position: fixed;
@@ -57,10 +57,11 @@ $rem60: rem(60px);
     .close-site-nav {
         background: none;
         border: 0;
-        height: rem(40px);
+        height: rem(50px);
+        line-height: 1;
         margin: 0;
         padding: 0;
-        width: rem(40px);
+        width: rem(50px);
     }
 }
 .site-nav-mask {
@@ -90,7 +91,7 @@ $rem60: rem(60px);
     &.active {
         right: 0;
     }
-    .site-search-content {
+    .site-search-content, .site-user-content {
         padding: rem(15px);
     }
 }
@@ -129,7 +130,7 @@ $rem60: rem(60px);
             }
             a[aria-expanded] {
                 box-shadow: none;
-                color: map-get($mat-deep-purple, 800);
+                color: #000;
                 display: block;
                 font-size: rem(18px);
                 font-weight: 400;
@@ -145,15 +146,24 @@ $rem60: rem(60px);
                     outline: medium none;
                 }
                 .ikn {
+                    background-color: map-get($mat-deep-purple, 800);
+                    border-radius: 100%;
+                    color: #fff;
                     display: block;
+                    height: rem(24px);
                     position: absolute;
                     right: rem(10px);
                     top: rem(16px);
-                    transition: all 0.5s ease;
+                    width: rem(24px);
+                    i {
+                        transition: all 0.5s ease;
+                    }
                 }
                 &.open {
                     .ikn {
-                        transform: rotate(90deg);
+                        i {
+                            transform: rotate(90deg);
+                        }
                     }
                 }
             }

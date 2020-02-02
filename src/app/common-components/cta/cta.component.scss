@@ -1,0 +1,15 @@
+@import './../../globalsass';
+.cta-comp {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: rem(4px);
+    margin-bottom: rem(4px);
+    .txt {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .with-txt {
+        margin-left: rem(4px);
+    }
+}

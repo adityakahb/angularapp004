@@ -15,3 +15,15 @@
         margin: 0;
     }
 }
+.bg-1 {
+    background-color: map-get($mat-deep-purple, 50);
+}
+.bg-2 {
+    background-color: map-get($mat-amber, 50);
+}
+.bg-3 {
+    background-color: map-get($mat-blue-grey, 50);
+}
+.bg-4 {
+    background-color: map-get($mat-brown, 50);
+}

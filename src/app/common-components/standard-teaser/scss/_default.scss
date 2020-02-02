@@ -1,0 +1,50 @@
+.teaser-card {
+    padding: 0 rem(8px);
+    border: rem(1px) solid $light; 
+    .teaser-img {
+        height: rem(240px);
+        overflow: hidden;
+        position: relative;
+    }
+    .teaser-avtar {
+        height: rem(40px);
+        overflow: hidden;
+        position: relative;
+    }
+    .mat-card-header {
+        align-items: center;
+        display: flex;
+        height: rem(80px);
+        padding: rem(8px) 0 rem(8px) rem(48px);
+        position: relative;
+        .h-title {
+            margin: 0;
+        }
+        .mat-card-title {
+            margin: 0;
+        }
+        ::ng-deep .mat-card-header-text {
+            display: inline-block;
+            margin: 0px;
+        }
+    }
+    .mat-card-subtitle {
+        height: rem(70px);
+        margin: 0 0 rem(8px) 0;
+        .btn {
+            margin: 0 rem(4px) rem(4px) 0;
+        }
+    }
+    .teaser-avtar {
+        left: 0;
+        position: absolute;
+        top: rem(20px);
+    }
+    .mat-card-content {
+        height: rem(100px);
+    }
+    .mat-card-actions {
+        margin: 0;
+        padding: rem(8px) 0 rem(4px) 0;
+    }
+}

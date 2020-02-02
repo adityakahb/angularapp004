@@ -1,5 +1,6 @@
 import { Directive, Output, EventEmitter } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { ResponsiveBreakpointService } from './../../services/responsive-breakpoint.service';
 
 let dpr = 0;
 
@@ -7,9 +8,8 @@ let dpr = 0;
   selector: '[appResponsiveBreakpoint]'
 })
 export class ResponsiveBreakpointDirective {
-  @Output() triggerBreakpointChange = new EventEmitter();
   currentBreakpoint = '';
-  constructor(public breakpointObserver: BreakpointObserver, private window: Window) {
+  constructor(public breakpointObserver: BreakpointObserver, private window: Window, private bpService: ResponsiveBreakpointService) {
     if (window && window.devicePixelRatio) {
       dpr = window.devicePixelRatio;
     }
@@ -35,7 +35,7 @@ export class ResponsiveBreakpointDirective {
         this.currentBreakpoint = 'xl';
       }
       setTimeout(() => {
-        this.triggerBreakpointChange.emit(this.currentBreakpoint + (dpr > 1 ? '2' : ''));
+        this.bpService.setCBP(this.currentBreakpoint + (dpr > 1 ? '2' : ''));
       }, 0);
     });
   }

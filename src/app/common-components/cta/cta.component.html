@@ -1,0 +1,16 @@
+<!-- <a href="#" title="some title" class="cta-comp btn btn-primary">
+    <span class="txt">text</span>
+    <i class="material-icons"> keyboard_arrow_right </i>
+</a>
+<a href="#" title="some title" class="cta-comp btn btn-outline-secondary btn-sm">
+    <span class="txt">Text gyq</span>
+    <i class="material-icons"> keyboard_arrow_right </i>
+</a> -->
+<a *ngIf="tag === 'a'" [href]="href" [title]="title" role="button" class="cta-comp" [ngClass]="cssclass">
+    <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
+    <i *ngIf="icon" class="material-icons" [ngClass]="text ? 'with-txt' : ''" [innerHTML]="icon"></i>
+</a>
+<button *ngIf="tag === 'button'" type="btntype" role="button" class="cta-comp" [ngClass]="cssclass">
+    <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
+    <i *ngIf="icon" class="material-icons" [ngClass]="text ? 'with-txt' : ''" [innerHTML]="icon"></i>
+</button>

@@ -1,0 +1,40 @@
+<mat-card class="teaser-card">
+    <mat-card-header>
+        <div mat-card-avatar class="teaser-avtar">
+            <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="avtarImg || {}"></app-responsive-image>    
+        </div>
+        <mat-card-title><h6 class="h-title" [innerHTML]="title"></h6></mat-card-title>
+    </mat-card-header>
+    <div class="teaser-img" mat-card-image>
+        <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg || {}"></app-responsive-image>
+    </div>
+    <mat-card-subtitle>
+        <app-cta
+            *ngFor="let tag of tags"
+            [tag]="tag.tag"
+            [href]="tag.link"
+            [title]="tag.title"
+            [cssclass]="tag.cssclass"
+            [text]="tag.title"
+        ></app-cta>
+    </mat-card-subtitle>
+    <mat-card-content>
+        <p [innerHTML]="desc"></p>
+    </mat-card-content>
+    <mat-card-actions>
+        <!-- <a *ngFor="let cta of ctas" [href]="cta.link" [title]="cta.title" class="btn" [ngClass]="cta.type === 'secondary' ? 'btn-outline-primary' : 'btn-primary'">
+            <span [innerHTML]="cta.title"></span>
+            <i class="material-icons"> keyboard_arrow_right </i>
+        </a> -->
+        <app-cta
+            *ngFor="let cta of ctas"
+            [tag]="cta.tag"
+            [href]="cta.link"
+            [title]="cta.title"
+            [cssclass]="cta.cssclass"
+            [text]="cta.title"
+            [icon]="cta.icon"
+        ></app-cta>
+            
+    </mat-card-actions>
+</mat-card>
