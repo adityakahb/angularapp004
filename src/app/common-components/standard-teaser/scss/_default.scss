@@ -1,12 +1,17 @@
 .teaser-card {
-    padding: 0 rem(8px);
+    background-color: rgba(#fff, 0.9);
     border: rem(1px) solid $light; 
+    height: 100%;
+    padding: 0 rem(8px) rem(54px) rem(8px);
+    position: relative;
     .teaser-img {
+        border: rem(1px) solid $light;
         height: rem(240px);
         overflow: hidden;
         position: relative;
     }
     .teaser-avtar {
+        border: rem(1px) solid $light;
         height: rem(40px);
         overflow: hidden;
         position: relative;
@@ -41,10 +46,13 @@
         top: rem(20px);
     }
     .mat-card-content {
-        height: rem(100px);
+        // height: rem(100px);
     }
     .mat-card-actions {
         margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: rem(8px);
         padding: rem(8px) 0 rem(4px) 0;
     }
 }

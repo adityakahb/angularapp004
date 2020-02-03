@@ -1,17 +1,18 @@
-import { SiteheaderComponent } from './../siteheader/siteheader.component';
-import { SitefooterComponent } from './../sitefooter/sitefooter.component';
-import { DirectiveModule } from './../../directives/directive.module';
-
-import { NgModule, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { CtaModule } from './../../common-components/cta/cta.module';
+import { DirectiveModule } from './../../directives/directive.module';
 import { FormsModule } from '@angular/forms';
+import { NgModule, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { SitefooterComponent } from './../sitefooter/sitefooter.component';
+import { SiteheaderComponent } from './../siteheader/siteheader.component';
 
 import { MatFormFieldModule, MatInputModule, MatAutocompleteModule, MatButtonModule, MatProgressSpinnerModule} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
+    CtaModule,
     DirectiveModule,
     FormsModule,
     MatAutocompleteModule,
@@ -19,7 +20,7 @@ import { MatFormFieldModule, MatInputModule, MatAutocompleteModule, MatButtonMod
     MatFormFieldModule,
     MatInputModule,
     MatProgressSpinnerModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     SiteheaderComponent,

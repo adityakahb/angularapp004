@@ -26,29 +26,9 @@ export class IndexComponent implements OnInit {
       },
       title: 'Lorem Ipsum Dolor Sit Amet',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-        Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. \
-        Curabitur sit amet sem a libero euismod molestie ut quis orci. Ut placerat id est ac condimentum. \
-        Aliquam non orci dui. Sed facilisis luctus dolor sed commodo. Nulla viverra, sem id hendrerit suscipit, \
-        neque nulla venenatis diam, sed tincidunt est urna a augue. Maecenas vitae aliquam justo. Vestibulum \
-        lacinia orci eget velit euismod, vel faucibus mi suscipit. Vestibulum dictum aliquet molestie. \
-        Fusce rhoncus, leo vel interdum commodo, odio orci varius diam, id fringilla lectus enim non libero.',
+        Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.',
       tags: [
         {
-          title: 'Tag 1',
-          link: '#',
-          cssclass: 'btn btn-outline-secondary btn-sm',
-          tag: 'a'
-        }, {
-          title: 'Tag 2',
-          link: '#',
-          cssclass: 'btn btn-outline-secondary btn-sm',
-          tag: 'a'
-        }, {
-          title: 'Tag 3',
-          link: '#',
-          cssclass: 'btn btn-outline-secondary btn-sm',
-          tag: 'a'
-        }, {
           title: 'Tag 1',
           link: '#',
           cssclass: 'btn btn-outline-secondary btn-sm',

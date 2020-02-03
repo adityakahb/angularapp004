@@ -146,12 +146,14 @@
                         </mat-form-field>
                     </div>
                     <div class="form-group">
-                        <button mat-raised-button color="primary">
-                            Sign In
-                            <i class="material-icons">
-                            keyboard_arrow_right
-                            </i>
-                        </button>
+                        <app-cta
+                            [tag]="'button'"
+                            [title]="'Sign In'"
+                            [cssclass]="'btn btn-primary'"
+                            [text]="'Sign in'"
+                            [icon]="'keyboard_arrow_right'"
+                            [buttontype]="'submit'"
+                        ></app-cta>
                     </div>
                 </form>
             </div>

@@ -1,14 +1,14 @@
 <mat-card class="teaser-card">
     <mat-card-header>
-        <div mat-card-avatar class="teaser-avtar">
-            <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="avtarImg || {}"></app-responsive-image>    
+        <div mat-card-avatar class="teaser-avtar" *ngIf="avtarImg">
+            <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="avtarImg"></app-responsive-image>    
         </div>
         <mat-card-title><h6 class="h-title" [innerHTML]="title"></h6></mat-card-title>
     </mat-card-header>
-    <div class="teaser-img" mat-card-image>
-        <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg || {}"></app-responsive-image>
+    <div class="teaser-img" mat-card-image *ngIf="tileImg">
+        <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
     </div>
-    <mat-card-subtitle>
+    <mat-card-subtitle *ngIf="(tags || []).length > 0">
         <app-cta
             *ngFor="let tag of tags"
             [tag]="tag.tag"

@@ -6,22 +6,23 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./standard-teaser.component.scss']
 })
 export class StandardTeaserComponent implements OnInit {
-  private tileImg;
   private avtarImg;
-  private title;
+  private ctas;
   private desc;
   private tags;
-  private ctas;
+  private tileImg;
+  private title;
+
   @Input() data;
   constructor() { }
 
   ngOnInit() {
-    this.tileImg = this.data.tileImg;
     this.avtarImg = this.data.avtarImg;
-    this.title = this.getTrimmedData(this.trimStr(this.data.title || ''), 40);
-    this.desc = this.getTrimmedData(this.trimStr(this.data.desc || ''), 160);
-    this.tags = this.data.tags;
     this.ctas = this.data.cta;
+    this.desc = this.getTrimmedData(this.trimStr(this.data.desc || ''), 200);
+    this.tags = this.data.tags;
+    this.tileImg = this.data.tileImg;
+    this.title = this.getTrimmedData(this.trimStr(this.data.title || ''), 40);
   }
 
   trimStr(str) {

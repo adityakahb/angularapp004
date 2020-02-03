@@ -11,17 +11,10 @@ let index = 0;
 })
 export class ResponsiveImageComponent implements AfterViewChecked {
 
-  private _imgData;
   private _cbp;
-  private currentImg;
+  private _imgData;
   private _stretch = false;
-
-  constructor(private cdRef:ChangeDetectorRef, private bpService: ResponsiveBreakpointService) {}
-
-  /* @Input()
-  set cbp(val: any) {
-    this._cbp = val;
-  }; */
+  private currentImg;
 
   @Input()
   set imgData (imgData: any) {
@@ -35,6 +28,8 @@ export class ResponsiveImageComponent implements AfterViewChecked {
 
   get imgData (): any { return this._imgData; }
   get stretch (): any { return this._stretch; }
+
+  constructor(private cdRef:ChangeDetectorRef, private bpService: ResponsiveBreakpointService) {}
 
   ngAfterViewChecked() {
     this._cbp = this.bpService.getCBP();
