@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-standard-teaser',
@@ -6,15 +7,18 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./standard-teaser.component.scss']
 })
 export class StandardTeaserComponent implements OnInit {
-  private avtarImg;
-  private ctas;
-  private desc;
-  private tags;
-  private tileImg;
-  private title;
-
+  avtarImg;
+  ctas;
+  desc;
+  tags;
+  tileImg;
+  title;
+  tileVideoSource;
+  tileVideoURL;
+  sttheme;
   @Input() data;
-  constructor() { }
+  @Input() theme;
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     this.avtarImg = this.data.avtarImg;
@@ -23,6 +27,11 @@ export class StandardTeaserComponent implements OnInit {
     this.tags = this.data.tags;
     this.tileImg = this.data.tileImg;
     this.title = this.getTrimmedData(this.trimStr(this.data.title || ''), 40);
+    this.sttheme = this.theme;
+    if ((this.data.tileVideo || {}).source && (this.data.tileVideo || {}).url) {
+      this.tileVideoURL = this.sanitizer.bypassSecurityTrustResourceUrl(this.data.tileVideo.url);
+      this.tileVideoSource = this.data.tileVideo.source;
+    }
   }
 
   trimStr(str) {
@@ -31,9 +40,10 @@ export class StandardTeaserComponent implements OnInit {
 
   getTrimmedData(str, num) {
     let st = '';
-    for (let item of str) {
+    let starr = str.split(' ');
+    for (let item of starr) {
       if (st.length < num) {
-        st += item;
+        st += ' ' + item;
       }
     }
     st = this.trimStr(st);

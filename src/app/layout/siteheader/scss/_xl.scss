@@ -1,17 +1,17 @@
 .siteheader-buffer {
-    height: rem(100px);
+    // height: rem(100px);
     &.active {
-        height: rem(80px);
+        // height: rem(80px);
     }
 }
 .siteheader-comp {
-    height: rem(100px);
+    // height: rem(100px);
     .logo-wrap {
-        padding: rem(15px) 0;
+        // padding: rem(15px) 0;
     }
     .nav-wrap {
         button {
-            height: rem(100px);
+            // height: rem(100px);
             margin: 0 0 0 rem(16px);
         }
     }
@@ -36,7 +36,7 @@
                 align-items: center;
                 display: flex;
                 font-size: rem(18px);
-                height: rem(98px);
+                height: rem(78px);
                 justify-content: center;
                 padding: rem(16px);
                 .ikn {
@@ -78,7 +78,7 @@
     }
 }
 .siteheader-comp.active {
-    height: rem(80px);
+    /* height: rem(80px);
     .logo-wrap {
         padding: rem(5px) 0;
     }
@@ -95,5 +95,5 @@
                 }
             }
         }
-    }
+    } */
 }

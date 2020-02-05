@@ -14,6 +14,8 @@ export class CtaComponent implements OnInit {
   @Input() tag = '';
   @Input() text = '';
   @Input() title = '';
+  @Input() index = -1;
+  @Input() last = true;
 
   constructor() { }
 
@@ -21,4 +23,27 @@ export class CtaComponent implements OnInit {
 
   }
 
+  generateCssClass(val) {
+    let str = this.cssclass;
+    if (this.icon && this.text) {
+      str += ' txt-icn';
+    }
+    if (this.icon && !this.text) {
+      str += ' icn-o';
+    }
+    if (!this.icon && this.text) {
+      str += ' txt-o';
+    }
+    if (!val) {
+      let strArr = str.split(' ');
+      for (let i of strArr) {
+        if (i.indexOf('t-dark') > -1 || i.indexOf('t-light') > -1) {
+          str = i;
+          break;
+        }
+      }
+      return str;
+    }
+    return str;
+  }
 }

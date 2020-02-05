@@ -15,7 +15,7 @@
         margin: 0;
     }
 }
-.bg-1 {
+/* .bg-1 {
     background-color: map-get($mat-deep-purple, 50);
 }
 .bg-2 {
@@ -26,4 +26,14 @@
 }
 .bg-4 {
     background-color: map-get($mat-brown, 50);
+} */
+
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
 }

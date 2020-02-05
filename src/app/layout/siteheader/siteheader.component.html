@@ -58,44 +58,6 @@
         </header>
         <div class="site-nav-mask" [ngClass]="{'active': isNavOpen || isUserNavOpen || isSearchNavOpen}" (click)="closeAllNav()">
         </div>
-        <!-- <div class="site-nav" [ngClass]="{'active': isNavOpen}">
-            <button class="close-site-nav d-md-none" (click)="closeAllNav()">
-                <i class="material-icons">close</i>
-            </button>
-            <div class="max-wrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col p-0">
-                            <nav>
-                                <ul class="nav-menu">
-                                    <li *ngFor="let item of navData" class="nav-item">
-                                        <a [href]="item.landing">
-                                            <span class="txt" [innerHTML]="item.name"></span>
-                                            <span class="ikn"><i class="material-icons">keyboard_arrow_right</i></span>
-                                        </a>
-                                        <div class="sub-nav">
-                                            <div class="max-wrap">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div *ngFor="let subnavgroup of item.links" class="col-12 col-md-4 p-0 pl-md-3 pr-md-3">
-                                                            <ul class="sub-nav-group">
-                                                                <li *ngFor="let subnav of subnavgroup.col">
-                                                                    <a [href]="subnav.link" [innerHTML]="subnav.name"></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <aside class="site-search" [ngClass]="{'active': isSearchNavOpen}">
             <button class="close-site-nav" (click)="closeAllNav()">
                 <i class="material-icons">close</i>
@@ -119,12 +81,14 @@
                         </mat-form-field>
                     </div>
                     <div class="form-group">
-                        <button mat-raised-button color="primary">
-                            Search
-                            <i class="material-icons">
-                            keyboard_arrow_right
-                            </i>
-                        </button>
+                        <app-cta
+                            [tag]="'button'"
+                            [title]="'Search'"
+                            [cssclass]="'btn btn-primary'"
+                            [text]="'Search'"
+                            [icon]="'keyboard_arrow_right'"
+                            [buttontype]="'submit'"
+                        ></app-cta>
                     </div>
                 </form>
             </div>

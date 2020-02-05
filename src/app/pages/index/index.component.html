@@ -1,6 +1,42 @@
 <div class="main-content">
   <app-indexbanner></app-indexbanner>
-  <section class="generic-content">
+  <section *ngFor="let section of indexData" class="generic-content" [ngClass]="section.theme">
+    <div class="max-wrap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col mt-3 mb-3 align-center">
+            <div class="section-header">
+              <span *ngIf="getSectionClass(section.icon)" [ngClass]="'section-icon food-icon ' + section.icon"></span>
+              <span *ngIf="!getSectionClass(section.icon)" class="section-icon">
+                <i class="material-icons" [innerHTML]="section.icon"></i>
+              </span>
+              <h2 [innerHTML]="section.title"></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data" [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
+            <app-standard-teaser [data]="item" [theme]="section.theme"></app-standard-teaser>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mt-3 mb-3 align-center">
+            <div class="section-footer">
+              <app-cta
+                [tag]="'a'"
+                [title]="section.morectatitle"
+                [cssclass]="'btn btn-info btn-lg'"
+                [text]="section.morectatext"
+                [icon]="section.morectaicon"
+                [href]="section.morectalink"
+              ></app-cta>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="generic-content">
     <div class="max-wrap">
       <div class="container-fluid">
         <div class="row">
@@ -23,6 +59,17 @@
           </div>
           <div class="col-md-6 col-xl-3 mt-3 mb-3">
             <app-standard-teaser [data]="sqImgLengthyData"></app-standard-teaser>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mt-3 mb-3 align-center">
+            <app-cta
+                [tag]="'a'"
+                [title]="'More vegetarian recipies'"
+                [cssclass]="'btn btn-info btn-lg'"
+                [text]="'More vegetarian recipies'"
+                [icon]="'keyboard_arrow_right'"
+            ></app-cta>
           </div>
         </div>
       </div>
@@ -49,7 +96,53 @@
             <app-standard-teaser [data]="rectImgLengthyData"></app-standard-teaser>
           </div>
         </div>
+        <div class="row">
+          <div class="col mt-3 mb-3 align-center">
+            <app-cta
+                [tag]="'a'"
+                [title]="'More healthy recipies'"
+                [cssclass]="'btn btn-info btn-lg'"
+                [text]="'More healthy recipies'"
+                [icon]="'keyboard_arrow_right'"
+            ></app-cta>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <section class="generic-content bg-2">
+    <div class="max-wrap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col mt-3 mb-3">
+            <div class="section-header">
+              <span class="section-icon">
+                <i class="material-icons">ondemand_video</i>
+              </span>
+              <h2>Latest videos</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-3 mb-3">
+            <app-standard-teaser [data]="rectVideoData"></app-standard-teaser>
+          </div>
+          <div class="col-md-6 mt-3 mb-3">
+            <app-standard-teaser [data]="rectVideoLengthyData"></app-standard-teaser>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mt-3 mb-3 align-center">
+            <app-cta
+                [tag]="'a'"
+                [title]="'More recipie videos'"
+                [cssclass]="'btn btn-info btn-lg'"
+                [text]="'More recipie videos'"
+                [icon]="'keyboard_arrow_right'"
+            ></app-cta>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 </div>

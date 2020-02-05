@@ -1,4 +1,4 @@
-<mat-card class="teaser-card">
+<mat-card class="teaser-card" [ngClass]="sttheme">
     <mat-card-header>
         <div mat-card-avatar class="teaser-avtar" *ngIf="avtarImg">
             <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="avtarImg"></app-responsive-image>    
@@ -8,14 +8,19 @@
     <div class="teaser-img" mat-card-image *ngIf="tileImg">
         <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
     </div>
+    <div class="teaser-video" mat-card-image *ngIf="tileVideoURL">
+        <iframe *ngIf="tileVideoSource === 'youtube'" width="560" height="315" [src]="tileVideoURL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <mat-card-subtitle *ngIf="(tags || []).length > 0">
         <app-cta
-            *ngFor="let tag of tags"
+            *ngFor="let tag of tags, index as i, last as isLast"
             [tag]="tag.tag"
             [href]="tag.link"
             [title]="tag.title"
             [cssclass]="tag.cssclass"
             [text]="tag.title"
+            [index]="i"
+            [last]="isLast"
         ></app-cta>
     </mat-card-subtitle>
     <mat-card-content>
@@ -27,7 +32,7 @@
             <i class="material-icons"> keyboard_arrow_right </i>
         </a> -->
         <app-cta
-            *ngFor="let cta of ctas"
+            *ngFor="let cta of ctas, last as isLast"
             [tag]="cta.tag"
             [href]="cta.link"
             [title]="cta.title"

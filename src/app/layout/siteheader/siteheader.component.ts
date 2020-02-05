@@ -36,7 +36,8 @@ export class SiteheaderComponent implements AfterViewInit {
     if (window && document) {
       lastScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
       if (lastScrollTop > 0) {
-        this.isScrolledDown = true;
+        // this.isScrolledDown = true;
+        this.isScrolledDown = false;
       } else if (this.isScrolledDown && lastScrollTop <= 0) {
         this.isScrolledDown = false;
       }
