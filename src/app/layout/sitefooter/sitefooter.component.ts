@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+declare const require: any;
+
+let footerJson = require('./../../data/footer.json');
 
 @Component({
   selector: 'app-sitefooter',
@@ -6,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sitefooter.component.scss']
 })
 export class SitefooterComponent implements OnInit {
-
+  private footerData;
   constructor() { }
 
   ngOnInit() {
+    this.footerData = footerJson;
   }
 
 }

@@ -1,10 +1,24 @@
 <mat-card class="teaser-card" [ngClass]="sttheme">
-    <mat-card-header>
-        <div mat-card-avatar class="teaser-avtar" *ngIf="avtarImg">
-            <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="avtarImg"></app-responsive-image>    
+    <mat-card-header [ngClass]="{'with-icon': icon}">
+        <div mat-card-avatar class="teaser-icon" *ngIf="icon">
+            <span [ngClass]="icon"></span>
         </div>
-        <mat-card-title><h6 class="h-title" [innerHTML]="title"></h6></mat-card-title>
+        <mat-card-title>
+            <h6 class="h-title" [innerHTML]="title"></h6>
+        </mat-card-title>
     </mat-card-header>
+    <div class="teaser-rating" [attr.data-ratings]="ratings">
+        <div class="r-wrap">
+            <i class="material-icons" *ngFor="let rt of ratingsArr" [innerHTML]="rt"></i>
+        </div>
+        <div class="r-count" *ngIf="noofratings">
+            <span [innerHTML]="get99(noofratings)"></span><span class="txt" [innerHTML]="getPlural(noofratings, 'Rating')"></span>
+        </div>
+        <div class="r-reviews" *ngIf="noofreviews">
+            <i class="material-icons">comment</i>
+            <span [innerHTML]="get99(noofreviews)"></span> <span class="txt" [innerHTML]="getPlural(noofratings, 'Review')"></span>
+        </div>
+    </div>
     <div class="teaser-img" mat-card-image *ngIf="tileImg">
         <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
     </div>
@@ -14,13 +28,14 @@
     <mat-card-subtitle *ngIf="(tags || []).length > 0">
         <app-cta
             *ngFor="let tag of tags, index as i, last as isLast"
-            [tag]="tag.tag"
-            [href]="tag.link"
-            [title]="tag.title"
             [cssclass]="tag.cssclass"
-            [text]="tag.title"
+            [href]="tag.link"
             [index]="i"
             [last]="isLast"
+            [tag]="tag.tag"
+            [text]="tag.title"
+            [theme]="sttheme"
+            [title]="tag.title"
         ></app-cta>
     </mat-card-subtitle>
     <mat-card-content>
@@ -33,12 +48,13 @@
         </a> -->
         <app-cta
             *ngFor="let cta of ctas, last as isLast"
-            [tag]="cta.tag"
-            [href]="cta.link"
-            [title]="cta.title"
             [cssclass]="cta.cssclass"
-            [text]="cta.title"
+            [href]="cta.link"
             [icon]="cta.icon"
+            [tag]="cta.tag"
+            [text]="cta.title"
+            [theme]="sttheme"
+            [title]="cta.title"
         ></app-cta>
             
     </mat-card-actions>

@@ -1,17 +1,6 @@
-.siteheader-buffer {
-    // height: rem(100px);
-    &.active {
-        // height: rem(80px);
-    }
-}
 .siteheader-comp {
-    // height: rem(100px);
-    .logo-wrap {
-        // padding: rem(15px) 0;
-    }
     .nav-wrap {
         button {
-            // height: rem(100px);
             margin: 0 0 0 rem(16px);
         }
     }
@@ -47,10 +36,6 @@
                     text-align: center;
                     top: 100%;
                     width: 100%;
-                    i {
-                        background-color: map-get($mat-deep-purple, 800);
-                        border-radius: 100%;
-                    }
                 }
                 &.open {
                     .ikn {
@@ -71,29 +56,8 @@
             padding: rem(15px) 0;
         }
         a {
-            // color: #fff;
             display: inline;
             padding: 0;
         }
     }
-}
-.siteheader-comp.active {
-    /* height: rem(80px);
-    .logo-wrap {
-        padding: rem(5px) 0;
-    }
-    .nav-wrap {
-        button {
-            height: rem(80px);
-        }
-    }
-    .site-nav {
-        .accessible-megamenu {
-            & > .accessible-megamenu-top-nav-item {
-                a[aria-expanded] {
-                    height: rem(78px);
-                }
-            }
-        }
-    } */
 }

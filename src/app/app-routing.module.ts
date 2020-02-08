@@ -6,7 +6,12 @@ const routes: Routes = [
     path: '',
     redirectTo: 'pages/index',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'pages/article',
+    redirectTo: 'pages/article',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({

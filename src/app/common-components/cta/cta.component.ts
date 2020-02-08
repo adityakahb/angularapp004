@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+let str = '';
+let theme = '';
+
 @Component({
   selector: 'app-cta',
   templateUrl: './cta.component.html',
@@ -16,6 +19,7 @@ export class CtaComponent implements OnInit {
   @Input() title = '';
   @Input() index = -1;
   @Input() last = true;
+  @Input() theme = 'light';
 
   constructor() { }
 
@@ -24,7 +28,18 @@ export class CtaComponent implements OnInit {
   }
 
   generateCssClass(val) {
-    let str = this.cssclass;
+    str = '';
+    theme = this.theme ? this.theme === 'dark' ? 'light' : 'dark' : 'dark';
+
+    if (this.cssclass.indexOf('btn-') !== -1) {
+      str = 'btn ' + this.cssclass;
+    }
+    if (this.cssclass === 'btn-outline') {
+      str = str.replace('btn-outline', 'btn-outline-' + theme);
+    }
+    if (this.cssclass === 'teaser-tag') {
+      str = 'teaser-tag ' + 't-' + theme;
+    }
     if (this.icon && this.text) {
       str += ' txt-icn';
     }

@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/_flaticon/flaticon.css",
+              "src/app/vendor/css/food/css/food.css",
+              "src/fonts.scss",
               "src/styles.scss",
               "src/app/vendor/css/megamenu.css"
             ],

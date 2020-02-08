@@ -3,23 +3,23 @@ import { CtaModule } from './../../common-components/cta/cta.module';
 import { IndexbannerComponent } from './../../components/indexbanner/indexbanner.component';
 import { IndexComponent } from './index.component';
 import { IndexRoutingModule } from './index-routing.module';
-import { MatCardModule } from '@angular/material/card';
 import { NgModule } from '@angular/core';
-import { ResponsiveImageComponent } from './../../common-components/responsive-image/responsive-image.component';
-import { StandardTeaserComponent } from './../../common-components/standard-teaser/standard-teaser.component';
+import { ResponsiveImageModule } from './../../common-components/responsive-image/responsive-image.module';
+import { SectionHeaderModule } from './../../common-components/section-header/section-header.module';
+import { StandardTeaserModule } from './../../common-components/standard-teaser/standard-teaser.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CtaModule,
     IndexRoutingModule,
-    MatCardModule,
+    ResponsiveImageModule,
+    SectionHeaderModule,
+    StandardTeaserModule,
   ],
   declarations: [
     IndexbannerComponent,
-    IndexComponent,
-    ResponsiveImageComponent,
-    StandardTeaserComponent,
+    IndexComponent
   ]
 })
 export class IndexModule { }

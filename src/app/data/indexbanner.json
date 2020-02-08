@@ -11,10 +11,41 @@
         "xl": "./../../../assets/banner/a-1280x720.jpg",
         "xl2": "./../../../assets/banner/a-2560x1440.jpg"
     },
-    "title": "",
-    "desc": "",
-    "cta": "",
-    "ctalink": ""
+    "data": {
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+        "ratings": "5",
+        "noofratings": "2",
+        "noofreviews": "2",
+        "tags": [
+            {
+                "title": "Tag 1",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }, {
+                "title": "Tag 2",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }
+            ],
+            "cta": [
+            {
+                "title": "View Recipe",
+                "link": "#",
+                "cssclass": "btn-primary",
+                "tag": "a",
+                "icon": "keyboard_arrow_right"
+            }, {
+                "title": "Share",
+                "link": "#",
+                "cssclass": "btn-outline",
+                "tag": "button",
+                "icon": "share"
+            }
+        ]
+    }
 }, {
     "img": {
         "xs": "./../../../assets/banner/b-800x450.jpg",
@@ -28,10 +59,41 @@
         "xl": "./../../../assets/banner/b-1280x720.jpg",
         "xl2": "./../../../assets/banner/b-2560x1440.jpg"
     },
-    "title": "",
-    "desc": "",
-    "cta": "",
-    "ctalink": ""
+    "data": {
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+        "ratings": "4.3",
+        "noofratings": "2",
+        "noofreviews": "2",
+        "tags": [
+            {
+                "title": "Tag 1",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }, {
+                "title": "Tag 2",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }
+            ],
+            "cta": [
+            {
+                "title": "View Recipe",
+                "link": "#",
+                "cssclass": "btn-primary",
+                "tag": "a",
+                "icon": "keyboard_arrow_right"
+            }, {
+                "title": "Share",
+                "link": "#",
+                "cssclass": "btn-outline",
+                "tag": "button",
+                "icon": "share"
+            }
+        ]
+    }
 }, {
     "img": {
         "xs": "./../../../assets/banner/c-800x450.jpg",
@@ -45,10 +107,41 @@
         "xl": "./../../../assets/banner/c-1280x720.jpg",
         "xl2": "./../../../assets/banner/c-2560x1440.jpg"
     },
-    "title": "",
-    "desc": "",
-    "cta": "",
-    "ctalink": ""
+    "data": {
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+        "ratings": "4.9",
+        "noofratings": "10",
+        "noofreviews": "5",
+        "tags": [
+            {
+                "title": "Tag 1",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }, {
+                "title": "Tag 2",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }
+            ],
+            "cta": [
+            {
+                "title": "View Recipe",
+                "link": "#",
+                "cssclass": "btn-primary",
+                "tag": "a",
+                "icon": "keyboard_arrow_right"
+            }, {
+                "title": "Share",
+                "link": "#",
+                "cssclass": "btn-outline",
+                "tag": "button",
+                "icon": "share"
+            }
+        ]
+    }
 }, {
     "img": {
         "xs": "./../../../assets/banner/d-800x450.jpg",
@@ -62,25 +155,87 @@
         "xl": "./../../../assets/banner/d-1280x720.jpg",
         "xl2": "./../../../assets/banner/d-2560x1440.jpg"
     },
-    "title": "",
-    "desc": "",
-    "cta": "",
-    "ctalink": ""
+    "data": {
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+        "ratings": "2.8",
+        "noofratings": "8",
+        "noofreviews": "3",
+        "tags": [
+            {
+                "title": "Tag 1",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }, {
+                "title": "Tag 2",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }
+            ],
+            "cta": [
+            {
+                "title": "View Recipe",
+                "link": "#",
+                "cssclass": "btn-primary",
+                "tag": "a",
+                "icon": "keyboard_arrow_right"
+            }, {
+                "title": "Share",
+                "link": "#",
+                "cssclass": "btn-outline",
+                "tag": "button",
+                "icon": "share"
+            }
+        ]
+    }
 }, {
     "img": {
-        "xs": "./../../../assets/banner/e-800x450.jpg",
-        "xs2": "./../../../assets/banner/e-1600x900.jpg",
+        "xs": "./../../../assets/banner/d-800x450.jpg",
+        "xs2": "./../../../assets/banner/d-1600x900.jpg",
         "sm": "",
         "sm2": "",
-        "md": "./../../../assets/banner/e-1040x585.jpg",
-        "md2": "./../../../assets/banner/e-2080x1170.jpg",
+        "md": "./../../../assets/banner/d-1040x585.jpg",
+        "md2": "./../../../assets/banner/d-2080x1170.jpg",
         "lg": "",
         "lg2": "",
-        "xl": "./../../../assets/banner/e-1280x720.jpg",
-        "xl2": "./../../../assets/banner/e-2560x1440.jpg"
+        "xl": "./../../../assets/banner/d-1280x720.jpg",
+        "xl2": "./../../../assets/banner/d-2560x1440.jpg"
     },
-    "title": "",
-    "desc": "",
-    "cta": "",
-    "ctalink": ""
+    "data": {
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+        "ratings": "4.3",
+        "noofratings": "9",
+        "noofreviews": "2",
+        "tags": [
+            {
+                "title": "Tag 1",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }, {
+                "title": "Tag 2",
+                "link": "#",
+                "cssclass": "teaser-tag",
+                "tag": "a"
+            }
+            ],
+            "cta": [
+            {
+                "title": "View Recipe",
+                "link": "#",
+                "cssclass": "btn-primary",
+                "tag": "a",
+                "icon": "keyboard_arrow_right"
+            }, {
+                "title": "Share",
+                "link": "#",
+                "cssclass": "btn-outline",
+                "tag": "button",
+                "icon": "share"
+            }
+        ]
+    }
 }]

@@ -1,15 +1,5 @@
 .generic-content {
-    padding: rem(48px) 0;
-}
-.section-header {
-    h2 {
-        &:before, &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: rem(2px);
-            width: rem(40px);
-            bottom: 50%;
-        }
+    .bg-wrap {
+        padding: rem(48px) 0;
     }
 }

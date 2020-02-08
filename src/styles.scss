@@ -46,13 +46,10 @@ body {
     background-image: url('./assets/body-bg.jpg');
     background-color: #C3702E;
     background-repeat: repeat;
-    background-position: top left;
+    background-position: bottom center;
     background-size: cover;
     font-family: 'Roboto Condensed', "Helvetica Neue", sans-serif;
-    .body-wrap {
-        background: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.1) 50%,rgba(0,0,0,0.5) 100%);;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+    line-height: 1.25;
     @media (min-resolution: 120dpi) and (-webkit-min-device-pixel-ratio: 1.2) {
         background-image: url('./assets/body-bg@2x.jpg');
     }

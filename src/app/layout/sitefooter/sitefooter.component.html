@@ -4,31 +4,27 @@
             <div class="max-wrap">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col col-md-6 col-xl-3">
-                            <!-- <div class="logo-wrap">
-                                <img src="./../../../assets/logo-black.svg">
-                            </div> -->
-                            <h6>Latest</h6>
+                        <div class="col-12 col-xl-3 logo-holder">
+                            <div class="logo-wrap">
+                                <img src="./../../../assets/logo-white.svg">
+                            </div>
                         </div>
-                        <div class="col col-md-6 col-xl-3">
-                            <h6>Recipes</h6>
+                        <div class="col-12 col-md-4 col-xl-3" *ngFor="let item of footerData.nav">
+                            <nav>
+                                <h6 [innerHTML]="item.title"></h6>
+                                <ul>
+                                    <li *ngFor="let link of item.links" [ngClass]="link.type === 'morelink' ? 'morelink' : ''">
+                                        <a [title]="link.title" [href]="link.link">
+                                            <span *ngIf="link.icon" class="icn">
+                                                <img [src]="link.icon" alt="link.title">
+                                            </span>
+                                            <span [innerHTML]="link.text" class="txt"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="col col-md-6 col-xl-3">
-                            <h6>Videos</h6>
-                        </div>
-                        <div class="col col-md-6 col-xl-3">
-                            <h6>News</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>
-                                Icons made by <a href="https://www.flaticon.com/authors/creaticca-creative-agency" title="Creaticca Creative Agency">Creaticca Creative Agency</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
+                        <div class="col-12">
                             <p>&copy; SWEET SPATULA</p>
                         </div>
                     </div>

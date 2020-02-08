@@ -146,9 +146,8 @@ $rem60: rem(60px);
                     outline: medium none;
                 }
                 .ikn {
-                    background-color: map-get($mat-deep-purple, 800);
                     border-radius: 100%;
-                    color: #fff;
+                    color: $primary;
                     display: block;
                     height: rem(24px);
                     position: absolute;

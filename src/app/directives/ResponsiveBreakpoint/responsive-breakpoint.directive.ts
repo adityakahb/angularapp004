@@ -1,17 +1,17 @@
-import { Directive, Output, EventEmitter } from '@angular/core';
+import { CommonFunctionsService } from './../../services/common-functions.service';
+import { Directive, AfterViewInit } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import { ResponsiveBreakpointService } from './../../services/responsive-breakpoint.service';
 
 let dpr = 0;
 
 @Directive({
   selector: '[appResponsiveBreakpoint]'
 })
-export class ResponsiveBreakpointDirective {
+export class ResponsiveBreakpointDirective implements AfterViewInit {
   currentBreakpoint = '';
-  constructor(public breakpointObserver: BreakpointObserver, private window: Window, private bpService: ResponsiveBreakpointService) {
-    if (window && window.devicePixelRatio) {
-      dpr = window.devicePixelRatio;
+  constructor(public breakpointObserver: BreakpointObserver, private window: Window, private bpService: CommonFunctionsService) {
+    if (this.window && window.devicePixelRatio) {
+      dpr = this.window.devicePixelRatio;
     }
   }
   ngAfterViewInit(): void {

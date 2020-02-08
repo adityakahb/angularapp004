@@ -5,23 +5,23 @@
 }
 
 @mixin center-center() {
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 @mixin top-center() {
+    left: 50%;
     position: absolute;
     top: 0%;
-    left: 50%;
     transform: translate(-50%, -0%);
 }
 
 @mixin top-right() {
+    left: 100%;
     position: absolute;
     top: 0%;
-    left: 100%;
     transform: translate(-100%, -0%);
 }
 

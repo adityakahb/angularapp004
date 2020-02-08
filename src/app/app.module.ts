@@ -1,5 +1,6 @@
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ArticleModule } from './pages/article/article.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { DefaultLayoutModule } from './layout/defaultlayout/defaultlayout.module';
@@ -13,6 +14,7 @@ import { NgModule } from '@angular/core';
   ],
   imports: [
     AppRoutingModule,
+    ArticleModule,
     BrowserAnimationsModule,
     BrowserModule,
     DefaultLayoutModule,

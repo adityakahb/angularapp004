@@ -26,43 +26,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-8 col-xl-6">
-                        <app-standard-teaser [data]="{
-                            'avtarImg': {
-                                'xs': 'https://via.placeholder.com/40x40.png',
-                                'xs2': 'https://via.placeholder.com/80x80.png'
-                              },
-                              'title': 'Lorem Ipsum Dolor Sit Amet',
-                              'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-                                Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.',
-                              'tags': [
-                                {
-                                  'title': 'Tag 1',
-                                  'link': '#',
-                                  'cssclass': 'teaser-tag t-dark',
-                                  'tag': 'a'
-                                }, {
-                                  'title': 'Tag 2',
-                                  'link': '#',
-                                  'cssclass': 'teaser-tag t-dark',
-                                  'tag': 'a'
-                                }
-                              ],
-                              'cta': [
-                                {
-                                  'title': 'View Recipe',
-                                  'link': '#',
-                                  'cssclass': 'btn btn-primary',
-                                  'tag': 'a',
-                                  'icon': 'keyboard_arrow_right'
-                                }, {
-                                  'title': 'Share',
-                                  'link': '#',
-                                  'cssclass': 'btn btn-outline-primary',
-                                  'tag': 'button',
-                                  'icon': 'share'
-                                }
-                              ]
-                        }"></app-standard-teaser>
+                        <app-standard-teaser [data]="bannerData.data"></app-standard-teaser>
                     </div>
                 </div>
             </div>

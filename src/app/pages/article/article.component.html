@@ -1,0 +1,100 @@
+<div class="main-content">
+  <section class="article-comp" [ngClass]="articleData.theme">
+    <div class="max-wrap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-xl-9">
+            <article class="article-wrap">
+              <app-section-header
+                [align]="'left'"
+                [tag]="'h1'"
+                [theme]="articleData.theme"
+                [title]="articleData.title"
+              >
+              </app-section-header>
+              <p class="h4" [innerHTML]="articleData.titlepara"></p>
+              <div [innerHTML]="articleData.para"></div>
+            </article>
+            <div class="author-comp" *ngIf="articleData.authordata">
+              
+            </div>
+            <h3 [innerHTML]="articleData.commentsheader"></h3>
+          </div>
+          <div class="col-12 col-xl-3 p-0">
+              <div class="container-fluid" *ngFor="let teaser of articleData.teaserside">
+                  <div class="row">
+                      <div class="col-12">
+                          <app-section-header
+                            [align]="'left'"
+                            [tag]="'h4'"
+                            [theme]="articleData.theme"
+                            [title]="teaser.teasertitle"
+                          >
+                          </app-section-header>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-md-6 col-xl-12 mt-3 mb-3" *ngFor="let teaserData of teaser.data">
+                          <app-standard-teaser [theme]="articleData.theme" [data]="teaserData"></app-standard-teaser>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mt-3 mb-3 align-center">
+                      <div class="section-footer">
+                        <app-cta
+                          [tag]="'a'"
+                          [title]="teaser.morectatitle"
+                          [cssclass]="'btn-info btn-lg'"
+                          [text]="teaser.morectatext"
+                          [icon]="teaser.morectaicon"
+                          [href]="teaser.morectalink"
+                        ></app-cta>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section *ngFor="let section of articleData.bottomSections" class="generic-content" [ngClass]="section.theme">
+    <div class="bg-wrap" [ngClass]="section.bg">
+      <div class="max-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 mt-3 mb-3 align-center">
+              <app-section-header
+                [align]="'center'"
+                [icon]="section.icon"
+                [tag]="'h2'"
+                [theme]="section.theme"
+                [title]="section.title"
+              >
+              </app-section-header>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-3 mb-3" *ngFor="let item of section.data" [ngClass]="item.col === '2' ? 'col-xl-6' : 'col-xl-3'">
+              <app-standard-teaser [data]="item" [theme]="section.theme"></app-standard-teaser>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3 mb-3 align-center">
+              <div class="section-footer">
+                <app-cta
+                  [tag]="'a'"
+                  [title]="section.morectatitle"
+                  [cssclass]="'btn-info btn-lg'"
+                  [text]="section.morectatext"
+                  [icon]="section.morectaicon"
+                  [href]="section.morectalink"
+                ></app-cta>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
