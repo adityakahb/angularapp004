@@ -4,6 +4,7 @@ import { IndexbannerComponent } from './../../components/indexbanner/indexbanner
 import { IndexComponent } from './index.component';
 import { IndexRoutingModule } from './index-routing.module';
 import { NgModule } from '@angular/core';
+import { RatingsReviewsModule } from './../../common-components/ratings-reviews/ratings-reviews.module';
 import { ResponsiveImageModule } from './../../common-components/responsive-image/responsive-image.module';
 import { SectionHeaderModule } from './../../common-components/section-header/section-header.module';
 import { StandardTeaserModule } from './../../common-components/standard-teaser/standard-teaser.module';
@@ -13,6 +14,7 @@ import { StandardTeaserModule } from './../../common-components/standard-teaser/
     CommonModule,
     CtaModule,
     IndexRoutingModule,
+    RatingsReviewsModule,
     ResponsiveImageModule,
     SectionHeaderModule,
     StandardTeaserModule,

@@ -7,18 +7,7 @@
             <h6 class="h-title" [innerHTML]="title"></h6>
         </mat-card-title>
     </mat-card-header>
-    <div class="teaser-rating" [attr.data-ratings]="ratings">
-        <div class="r-wrap">
-            <i class="material-icons" *ngFor="let rt of ratingsArr" [innerHTML]="rt"></i>
-        </div>
-        <div class="r-count" *ngIf="noofratings">
-            <span [innerHTML]="get99(noofratings)"></span><span class="txt" [innerHTML]="getPlural(noofratings, 'Rating')"></span>
-        </div>
-        <div class="r-reviews" *ngIf="noofreviews">
-            <i class="material-icons">comment</i>
-            <span [innerHTML]="get99(noofreviews)"></span> <span class="txt" [innerHTML]="getPlural(noofratings, 'Review')"></span>
-        </div>
-    </div>
+    <app-ratings-reviews [data]="ratings"></app-ratings-reviews>
     <div class="teaser-img" mat-card-image *ngIf="tileImg">
         <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
     </div>

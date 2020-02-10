@@ -4,12 +4,13 @@ import {FormControl, Validators} from '@angular/forms';
 declare const require: any;
 declare const $: any;
 
-let navJson = require('./../../data/megamenu.json');
+const navJson = require('./../../data/megamenu.json');
+const langJson = require('./../../data/lang.json');
 let lastScrollTop = 0;
 let lastScrollTopVal = 0;
 let bodyElem;
 let htmlElem;
-let className = 'nav-open';
+const className = 'nav-open';
 
 @Component({
   selector: 'app-siteheader',
@@ -18,10 +19,13 @@ let className = 'nav-open';
 })
 export class SiteheaderComponent implements AfterViewInit {
   navData = navJson;
+  langData = langJson;
   isNavOpen = false;
   isUserNavOpen = false;
   isSearchNavOpen = false;
+  isLangNavOpen = false;
   isScrolledDown = false;
+  langArr = [];
   constructor(private renderer: Renderer2) { }
 
   ngAfterViewInit() {
@@ -30,6 +34,11 @@ export class SiteheaderComponent implements AfterViewInit {
       bodyElem = document.querySelector('body');
       htmlElem = document.documentElement;
     }
+    this.langData.forEach((item, index) => {
+      if (index !== 0) {
+        this.langArr.push(item);
+      }
+    });
   }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
@@ -62,6 +71,11 @@ export class SiteheaderComponent implements AfterViewInit {
     this.updateScrollVal();
   }
 
+  openLangNav() {
+    this.isLangNavOpen = true;
+    this.updateScrollVal();
+  }
+
   openUserNav() {
     this.isUserNavOpen = true;
     this.updateScrollVal();
@@ -70,6 +84,7 @@ export class SiteheaderComponent implements AfterViewInit {
   closeAllNav() {
     this.isNavOpen = false;
     this.isUserNavOpen = false;
+    this.isLangNavOpen = false;
     this.isSearchNavOpen = false;
     if (window && document && htmlElem && bodyElem && bodyElem.classList.contains(className)) {
       bodyElem.removeAttribute('style');

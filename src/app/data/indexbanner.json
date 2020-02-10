@@ -14,9 +14,11 @@
     "data": {
         "title": "Lorem Ipsum Dolor Sit Amet",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratings": "5",
-        "noofratings": "2",
-        "noofreviews": "2",
+        "ratingsData": {
+            "ratings": "4.5",
+            "noofratings": "282",
+            "noofreviews": "320"
+        },
         "tags": [
             {
                 "title": "Tag 1",
@@ -62,9 +64,11 @@
     "data": {
         "title": "Lorem Ipsum Dolor Sit Amet",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratings": "4.3",
-        "noofratings": "2",
-        "noofreviews": "2",
+        "ratingsData": {
+            "ratings": "4.5",
+            "noofratings": "282",
+            "noofreviews": "320"
+        },
         "tags": [
             {
                 "title": "Tag 1",
@@ -110,9 +114,6 @@
     "data": {
         "title": "Lorem Ipsum Dolor Sit Amet",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratings": "4.9",
-        "noofratings": "10",
-        "noofreviews": "5",
         "tags": [
             {
                 "title": "Tag 1",
@@ -159,8 +160,11 @@
         "title": "Lorem Ipsum Dolor Sit Amet",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
         "ratings": "2.8",
-        "noofratings": "8",
-        "noofreviews": "3",
+        "ratingsData": {
+            "ratings": "4.5",
+            "noofratings": "282",
+            "noofreviews": "320"
+        },
         "tags": [
             {
                 "title": "Tag 1",
@@ -206,9 +210,11 @@
     "data": {
         "title": "Lorem Ipsum Dolor Sit Amet",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-        "ratings": "4.3",
-        "noofratings": "9",
-        "noofreviews": "2",
+        "ratingsData": {
+            "ratings": "4.5",
+            "noofratings": "282",
+            "noofreviews": "320"
+        },
         "tags": [
             {
                 "title": "Tag 1",

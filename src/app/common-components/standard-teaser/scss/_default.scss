@@ -68,30 +68,6 @@
         margin: 0 0 rem(16px) 0;
         overflow: hidden;
     }
-    .teaser-rating {
-        padding: rem(4px) 0;
-        height: rem(30px);
-        .r-wrap {
-            display: inline-block;
-            margin-right: rem(8px);
-        }
-        .r-count, .r-reviews {
-            display: inline-block;
-            position: relative;
-            top: rem(-3px);
-            margin-right: rem(24px);
-        }
-        .r-reviews {
-            .material-icons {
-                position: relative;
-                top: rem(6px);
-                margin-right: rem(8px);
-            }    
-        }
-        .material-icons {
-            font-size: rem(20px);
-        }
-    }
     .mat-card-actions {
         bottom: 0;
         left: rem(8px);

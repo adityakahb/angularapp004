@@ -18,9 +18,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "5",
-                "noofratings": "2",
-                "noofreviews": "2",
+                "ratingsData": {
+                    "ratings": "0",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -113,9 +115,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "4.5",
-                "noofratings": "200",
-                "noofreviews": "989",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "640",
+                    "noofreviews": "360"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -162,9 +166,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "4.2",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "2.4",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -222,9 +228,62 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "3.4",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
+                "tags": [
+                    {
+                        "title": "Tag 1",
+                        "link": "#",
+                        "cssclass": "teaser-tag",
+                        "tag": "a"
+                    },
+                    {
+                        "title": "Tag 2",
+                        "link": "#",
+                        "cssclass": "teaser-tag",
+                        "tag": "a"
+                    },
+                    {
+                        "title": "Tag 3",
+                        "link": "#",
+                        "cssclass": "teaser-tag",
+                        "tag": "a"
+                    }
+                ],
+                "cta": [
+                    {
+                        "title": "View Recipe",
+                        "link": "#",
+                        "cssclass": "btn-primary",
+                        "tag": "a",
+                        "icon": "keyboard_arrow_right"
+                    },
+                    {
+                        "title": "Share",
+                        "link": "#",
+                        "cssclass": "btn-outline",
+                        "tag": "button",
+                        "icon": "share"
+                    }
+                ]
+            },
+            {
+                "tileImg": {
+                    "xs": "https://via.placeholder.com/640x360.png",
+                    "xs2": "https://via.placeholder.com/1280x720.png",
+                    "md": "https://via.placeholder.com/800x450.png",
+                    "md2": "https://via.placeholder.com/1600x900.png"
+                },
+                "title": "Lorem Ipsum Dolor Sit Amet",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -272,8 +331,11 @@
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
                 "ratings": "2.1",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -320,58 +382,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "1.4",
-                "noofratings": "88",
-                "noofreviews": "88",
-                "tags": [
-                    {
-                        "title": "Tag 1",
-                        "link": "#",
-                        "cssclass": "teaser-tag",
-                        "tag": "a"
-                    },
-                    {
-                        "title": "Tag 2",
-                        "link": "#",
-                        "cssclass": "teaser-tag",
-                        "tag": "a"
-                    },
-                    {
-                        "title": "Tag 3",
-                        "link": "#",
-                        "cssclass": "teaser-tag",
-                        "tag": "a"
-                    }
-                ],
-                "cta": [
-                    {
-                        "title": "View Recipe",
-                        "link": "#",
-                        "cssclass": "btn-primary",
-                        "tag": "a",
-                        "icon": "keyboard_arrow_right"
-                    },
-                    {
-                        "title": "Share",
-                        "link": "#",
-                        "cssclass": "btn-outline",
-                        "tag": "button",
-                        "icon": "share"
-                    }
-                ]
-            },
-            {
-                "tileImg": {
-                    "xs": "https://via.placeholder.com/640x360.png",
-                    "xs2": "https://via.placeholder.com/1280x720.png",
-                    "md": "https://via.placeholder.com/800x450.png",
-                    "md2": "https://via.placeholder.com/1600x900.png"
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
                 },
-                "title": "Lorem Ipsum Dolor Sit Amet",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "4.3",
-                "noofratings": "88",
-                "noofreviews": "88",
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -430,9 +445,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "2",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -479,9 +496,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "1.1",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -528,9 +547,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "3.3",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -577,9 +598,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "4.4",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -635,9 +658,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "3.5",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",
@@ -683,9 +708,11 @@
                 },
                 "title": "Lorem Ipsum Dolor Sit Amet",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
-                "ratings": "3.8",
-                "noofratings": "88",
-                "noofreviews": "88",
+                "ratingsData": {
+                    "ratings": "4.5",
+                    "noofratings": "88",
+                    "noofreviews": "88"
+                },
                 "tags": [
                     {
                         "title": "Tag 1",

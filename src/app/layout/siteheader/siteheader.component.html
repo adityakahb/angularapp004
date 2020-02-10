@@ -47,6 +47,10 @@
                                 <button type="button" (click)="openUserNav()">
                                     <i class="material-icons">account_circle</i>
                                 </button>
+                                <button type="button" (click)="openLangNav()">
+                                    <!-- <i class="material-icons">language</i> -->
+                                    <span class="txt">EN</span>
+                                </button>
                                 <button type="button" class="d-xl-none" (click)="openNav()">
                                     <i class="material-icons">menu</i>
                                 </button>
@@ -56,8 +60,26 @@
                 </div>
             </div>
         </header>
-        <div class="site-nav-mask" [ngClass]="{'active': isNavOpen || isUserNavOpen || isSearchNavOpen}" (click)="closeAllNav()">
+        <div class="site-nav-mask" [ngClass]="{'active': isNavOpen || isUserNavOpen || isSearchNavOpen || isLangNavOpen}" (click)="closeAllNav()">
         </div>
+        <aside class="site-lang" [ngClass]="{'active': isLangNavOpen}">
+            <button class="close-site-nav" (click)="closeAllNav()">
+                <i class="material-icons">close</i>
+            </button>
+            <div class="site-lang-content">
+                <div class="lang-active">
+                    English
+                    <i class="material-icons">done</i>
+                </div>
+                <nav>
+                    <ul>
+                        <li *ngFor="let lang of langArr">
+                            <a [href]="lang.link" [ngClass]="lang.css" [innerHTML]="lang.lang"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
         <aside class="site-search" [ngClass]="{'active': isSearchNavOpen}">
             <button class="close-site-nav" (click)="closeAllNav()">
                 <i class="material-icons">close</i>

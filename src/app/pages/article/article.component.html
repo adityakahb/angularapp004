@@ -12,13 +12,50 @@
                 [title]="articleData.title"
               >
               </app-section-header>
+              <app-ratings-reviews [data]="{
+                ratings: '4.5',
+                noofratings: '282',
+                noofreviews: '320',
+                ratingstxt: 'Ratings',
+                reviewstxt: 'Reviews'
+              }"></app-ratings-reviews>
               <p class="h4" [innerHTML]="articleData.titlepara"></p>
               <div [innerHTML]="articleData.para"></div>
             </article>
             <div class="author-comp" *ngIf="articleData.authordata">
               
             </div>
-            <h3 [innerHTML]="articleData.commentsheader"></h3>
+            <app-section-header
+                [align]="'left'"
+                [tag]="'h2'"
+                [theme]="articleData.theme"
+                [title]="articleData.reviewsheader"
+              ></app-section-header>
+            <section class="reviews-comp">
+              <ckeditor
+                data="<p>Hello, world!</p>"
+                [config]="{
+                  toolbarGroups: [
+                    { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+                    { name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+                    { name: 'editing', groups: [ 'find', 'selection', 'spellchecker', 'editing' ] },
+                    { name: 'forms', groups: [ 'forms' ] },
+                    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+                    { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] },
+                    { name: 'links', groups: [ 'links' ] },
+                    { name: 'insert', groups: [ 'insert' ] },
+                    '/',
+                    { name: 'styles', groups: [ 'styles' ] },
+                    { name: 'colors', groups: [ 'colors' ] },
+                    { name: 'tools', groups: [ 'tools' ] },
+                    { name: 'others', groups: [ 'others' ] },
+                    { name: 'about', groups: [ 'about' ] }
+                  ],
+                  removeButtons: 'Source,Save,Templates,Cut,Undo,Find,SelectAll,Scayt,Form,Subscript,Superscript,CopyFormatting,RemoveFormat,Outdent,Indent,Blockquote,CreateDiv,NewPage,Preview,Print,Copy,Paste,PasteText,PasteFromWord,Redo,Replace,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,NumberedList,BulletedList,JustifyLeft,JustifyCenter,JustifyRight,JustifyBlock,Flash,Anchor,BidiLtr,BidiRtl,Language,PageBreak,Iframe,Maximize,ShowBlocks',
+                  removePlugins: 'resize'
+                }"
+              ></ckeditor>
+            </section>
           </div>
           <div class="col-12 col-xl-3 p-0">
               <div class="container-fluid" *ngFor="let teaser of articleData.teaserside">

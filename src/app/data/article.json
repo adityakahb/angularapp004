@@ -15,7 +15,7 @@
         },
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel posuere leo. Nunc commodo fermentum justo quis suscipit."
     },
-    "commentsheader": "Comments and discussions",
+    "reviewsheader": "Reviews",
     "teaserside": [
         {
             "teasertitle": "Related Articles",
@@ -33,6 +33,11 @@
                     },
                     "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
                     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
                     "tags": [
                         {
                             "title": "Tag 1",
@@ -79,6 +84,11 @@
                     },
                     "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
                     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
                     "tags": [
                         {
                             "title": "Tag 1",
@@ -139,6 +149,11 @@
                     },
                     "title": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
                     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
                     "tags": [
                         {
                             "title": "Tag 1",
@@ -185,6 +200,11 @@
                     },
                     "title": "Lorem Ipsum Dolor Sit Amet",
                     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
                     "tags": [
                         {
                             "title": "Tag 1",
@@ -231,6 +251,11 @@
                     },
                     "title": "Lorem Ipsum Dolor Sit Amet",
                     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
                     "tags": [
                         {
                             "title": "Tag 1",
@@ -277,6 +302,11 @@
                     },
                     "title": "Lorem Ipsum Dolor Sit Amet",
                     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius quis orci nec hendrerit. Etiam eget elementum elit.",
+                    "ratingsData": {
+                        "ratings": "4.5",
+                        "noofratings": "282",
+                        "noofreviews": "320"
+                    },
                     "tags": [
                         {
                             "title": "Tag 1",

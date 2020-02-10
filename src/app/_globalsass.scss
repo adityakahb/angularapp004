@@ -33,3 +33,19 @@ $theme-colors: map-merge(
 @import './sass-globals/rem';
 @import './sass-globals/mixins';
 @import './sass-globals/variables';
+
+.type-hindi {
+  font-family: 'Hind', sans-serif;
+}
+.type-marathi {
+  font-family: 'Khand', sans-serif;
+}
+.type-bangla {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.type-gurumukhi {
+  font-family: 'Mukta Mahee', sans-serif;
+}
+.type-gujarati {
+  font-family: 'Hind Vadodara', sans-serif;
+}
