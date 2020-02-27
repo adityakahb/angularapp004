@@ -20,6 +20,8 @@
     }
     .teaser-icon {
         align-items: center;
+        background-color: #fff;
+        border-radius: 100%;
         display: flex;
         height: rem(40px);
         justify-content: center;
@@ -28,18 +30,16 @@
         position: absolute;
         text-align: center;
         top: rem(20px);
-        background-color: #fff;
-        border-radius: 100%;
         span {
             display: inline-block;
             height: 70%;
-            width: 70%;
             position: relative;
+            width: 70%;
             &:before {
-                font-size: rem(27px);
                 @include center-center();
-                width: 100%;
+                font-size: rem(27px);
                 height: 100%;
+                width: 100%;
             }
         }
     }

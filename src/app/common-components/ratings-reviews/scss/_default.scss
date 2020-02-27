@@ -1,9 +1,9 @@
 .teaser-rating {
-    padding: rem(4px) 0 rem(16px) 0;
-    height: rem(32px);
-    display: flex;
     align-items: center;
+    display: flex;
     font-size: rem(14px);
+    height: rem(32px);
+    padding: rem(4px) 0 rem(16px) 0;
     .r-num, .r-wrap, .r-count, .r-r-icon, .r-reviews {
         height: rem(20px);
         padding-right: rem(4px);

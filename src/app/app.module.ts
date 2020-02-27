@@ -7,10 +7,12 @@ import { DefaultLayoutModule } from './layout/defaultlayout/defaultlayout.module
 import { IndexModule } from './pages/index/index.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { NgModule } from '@angular/core';
+import { RecipeComponent } from './pages/recipe/recipe.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecipeComponent,
   ],
   imports: [
     AppRoutingModule,
